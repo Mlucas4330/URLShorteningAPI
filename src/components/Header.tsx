@@ -16,24 +16,16 @@ const Header = () => {
                     }}
                     gap={'3rem'}
                     as={'header'}
+                    justifyItems={'center'}
                     alignItems={'center'}
                 >
-                    <Image
-                        order={{
-                            base: 0,
-                            lg: 1
-                        }}
-                        src={illustrationWorking}
-                        alt='Illustration Working'
-                    />
-
                     <Box
                         textAlign={{
                             base: 'center',
                             lg: 'left'
                         }}
                     >
-                        <Heading as={'h1'} size={'3xl'}>
+                        <Heading as={'h1'} lineHeight={1.2} size={'3xl'}>
                             More than just shorter links
                         </Heading>
                         <Text fontSize='xl' mt={'1rem'} mb={'2rem'}>
@@ -41,6 +33,8 @@ const Header = () => {
                         </Text>
                         <Button size={'lg'}>Get Started</Button>
                     </Box>
+
+                    <Image src={illustrationWorking} alt='Illustration Working' />
                 </SimpleGrid>
             </Container>
         </>
